@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create you resume here</h1>
+    <h2>enter the details</h2>
+    <form method="post" action="/resume">
+        <input type="text" name="users[name]" id="" placeholder="enter you name">
+        <input type="text" name="users[email]" id="" placeholder="emil">
+        <input type="text" name="users[number]" placeholder="enter your number">
+        <input type="text" placeholder="address" name="users[address]">
+        <input type="text" placeholder="degree" name="users[HiColification]">
+        <input type="text" placeholder="experience" name="users[experience]">
+        <input type="text" placeholder="skills" name="users[skills]">
+        <button>submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Resume</title>
+    <style>
+        .name{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Personal Details</h1>
+    
+        {{#each users}}
+        <div class="name"><h2 >{{this.name}}</h2></div>
+        <h3>Number: {{this.number}}</h3>
+        <h3>Email: {{this.email}}</h3>
+        <h3>Address: {{this.address}}</h3>
+        <hr>
+        <h1>Educatinal Details</h1>
+        <h3>Higher Education: {{this.HiColification}}</h3>
+        <hr>
+        <h1>Experience</h1>
+        <h3>{{this.experience}}</h3>
+        <h1>Skill</h1>
+        <h3>{{this.skills}}</h3>
+      {{/each}}
+  
+   
+      
+  </body>
+</html>
