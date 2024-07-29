@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="image">
+        <img src=alt="">
+    </div> -->
+    <div class="personal">
+        <h1><%= info.name  %></h1>
+        <h2><%= info.email  %> | (+91) <%= info.number %></h2>
+    </div>
+   
+    <div class="icon">
+       <a href=""><i class="fa-brands fa-github"> <span class="icon-title"><%= info.name  %></span></i></a> 
+        <a href=""><i class="fa-brands fa-linkedin"> <span class="icon-title"><%= info.name  %></span></i></a>
+    </div>
+
+    <section>
+        <div class="info">
+            <h1>EXPERIENCE</h1>
+            <h2> &#9830; <%= info.exTitle %></h2>
+            <p><%= info.exDesc %></p>
+        </div>
+
+        <div class="info">
+            <h1>EDUCATION</h1>
+            <h2>&#9830;<%= info.education %></h2>
+        </div>
+
+        <div class="info">
+            <h1>PROJECTS</h1>
+            <h2>&#9830; <%= info.projTitle  %></h2>
+            <p><%= info.projDesc  %></p>
+        </div>
+        
+        <div class="info">
+            <h1>SKILLS</h1>
+            <h2>&#9830; <%= info.skills %></h2>
+        </div>
+
+        <div class="info">
+            <h1>HOBIES</h1>
+        </div>
+
+    </section>
+
+    <!-- <a  class="preview" href="/resume/preview"><button>Preview Resuume</button></a>
+    <a class="download" href="/resume/download"><button>download Resuume</button></a>
+     -->
+    <script src="./template.js"></script>
+</body>
+</html>

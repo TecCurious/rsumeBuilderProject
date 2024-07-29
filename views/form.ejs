@@ -1,0 +1,27 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    
+    <h1>Create Your Resume Here</h1>
+    <h2>Enter The Details</h2>
+    <div class="inp-form">
+    <img src="resume2-removebg-preview.png">
+    
+    <form method="post" action="/resume">
+        <input type="text" name="info[name]" id="" placeholder="  Enter Your Name">
+        <input type="text" name="info[email]" id="" placeholder="  Email">
+        <input type="text" name="info[number]" placeholder="  Enter Your Number">
+        <input type="text" name="info[exTitle]" id="" placeholder="enter experience title ">
+        <input type="text" name="info[exDesc]" id="" placeholder="enter experience description">
+        <!-- <input type="text" name="ingo[gitLink]" id="" placeholder="enter your gitLink" > -->
+        <!-- <input type="text" placeholder="  Address" name="in[address]"> -->
+        <input type="text" placeholder=" EX :Bachelor Of Computer Application" name="info[education] " >
+        <input type="text" name="info[projTitle]" placeholder="Project Title">
+        <input type="text" name="info[projDesc]" placeholder="Project description">
+        <!-- <input type="text" placeholder="  Experience" name="info[experience]"> -->
+        <input type="text" placeholder="  Skills" name="info[skills]">
+        <button>Submit</button>
+    </form>
+
+</div>
+<script src="./template.js"></script>
+</body>
