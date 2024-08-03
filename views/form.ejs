@@ -1,0 +1,49 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="top-text">
+        <h1>Create Your Resume Here</h1>
+        <h2>Enter The Details</h2>
+    </div>
+   
+    <div class="inp-form">
+        <div class="images">
+            <div class="imag">
+                <img src="resume2-removebg-preview.png">
+                <h3>Enter your correct details to create a usefull resume</h3>
+            </div>
+            <div class="imag">
+                <img src="form-imag2.png">
+                <h3>Click on the Submit button to Create your Resume</h3>
+            </div>
+        </div>
+      
+    
+    
+    <form method="post" action="/resume">
+        <label for="info[name]">Name</label>
+        <input type="text" name="info[name]" id="" placeholder="EX:- Tonny">
+        <label for="info[name]">Email</label>
+        <input type="text" name="info[email]" id="" placeholder="Ex:- user@gmail.com">
+        <label for="info[name]">Number</label>
+        <input type="text" name="info[number]" placeholder="91+ 9600000000">
+        <label for="info[name]">Experience Title</label>
+        <input type="text" name="info[exTitle]" id="" placeholder="Ex:- Internship | Job ">
+        <label for="info[name]">Experience description</label>
+        <input type="text" name="info[exDesc]" id="" placeholder="EX:- Worked as web developer Intern">
+        <label for="info[name]">education</label>
+        <input type="text" placeholder=" EX :Bachelor Of Computer Application" name="info[education] " >
+        <label for="info[name]">Project Title</label>
+        <input type="text" name="info[projTitle]" placeholder="Ex:- Spotify Web-Page Clone ">
+        <label for="info[name]">Project Description</label>
+        <input type="text" name="info[projDesc]" placeholder="Project description">
+        <label for="info[name]">Skills</label>
+        <input type="text" placeholder="Ex:- HTML CSS" name="info[skills]">
+        <label for="info[name]">Hobies</label>
+        <input type="text" name="info[hobies]" id="" placeholder=" Listening Music |  Blogging">
+        <button>Submit</button>
+        <p style="color: red;" ></p>
+    </form>
+
+</div>
+<script src="./template.js"></script>
+</body>
